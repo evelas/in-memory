@@ -1,8 +1,13 @@
 [package]
-name = "db"
+name = "app"
 version.workspace = true
 edition = "2021"
 
+[[bin]]
+name = "app"
+path = "./src/main.rs"
+
 [dependencies]
 tokio.workspace = true
-async-trait = "0.1.68"
+
+db = { path = "../db" }

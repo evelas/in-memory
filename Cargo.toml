@@ -1,0 +1,12 @@
+[workspace]
+resolver = "2"
+members = [
+    "app",
+    "db",
+]
+
+[workspace.package]
+version = "0.1.0"
+
+[workspace.dependencies]
+tokio = { version = "1", features = ["full"] }
